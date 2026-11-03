@@ -18,7 +18,7 @@ Data dictionary Markdown
 - No column defaults were reported.
 - These are initial entries covering selected fields in each table.
 
-## 1. Customers — core.customers
+## 1. Customers - core.customers
 
 Customer profiles, property requirements and stated budgets.
 
@@ -34,7 +34,7 @@ Customer profiles, property requirements and stated budgets.
 | consent_marketing | BOOLEAN | Yes | Recorded marketing consent indicator. |
 | created_at | TIMESTAMP | Yes | Customer record creation date and time. |
 
-## 2. Leads — core.leads
+## 2. Leads - core.leads
 
 Property enquiries and their progress.
 
@@ -49,7 +49,7 @@ Property enquiries and their progress.
 | closed_date | DATE | Yes | Lead closure date. |
 | converted | BOOLEAN | Yes | Recorded conversion indicator. |
 
-## 3. Agents — core.agents
+## 3. Agents - core.agents
 
 Agent team, branch and employment details.
 
@@ -62,7 +62,7 @@ Agent team, branch and employment details.
 | hire_date | DATE | Yes | Hire date. |
 | propertymark_qualified | BOOLEAN | Yes | Recorded Propertymark qualification indicator. |
 
-## 4. Campaigns — core.campaigns
+## 4. Campaigns - core.campaigns
 
 Marketing campaign details and expenditure.
 
@@ -76,7 +76,7 @@ Marketing campaign details and expenditure.
 | end_date | DATE | Yes | Campaign end date. |
 | spend_gbp | NUMERIC | Yes | Recorded campaign expenditure in GBP. |
 
-## 5. Campaign Responses — core.campaign_responses
+## 5. Campaign Responses - core.campaign_responses
 
 Customer responses to marketing campaigns.
 
@@ -88,7 +88,7 @@ Customer responses to marketing campaigns.
 | response_type | TEXT | Yes | Recorded response category. |
 | response_time | TIMESTAMP | Yes | Recorded response date and time. |
 
-## 6. Interactions — core.interactions
+## 6. Interactions - core.interactions
 
 Communications associated with leads and agents.
 
@@ -102,7 +102,7 @@ Communications associated with leads and agents.
 | interaction_time | TIMESTAMP | Yes | Interaction date and time. |
 | response_time_min | NUMERIC | Yes | Recorded response time in minutes. |
 
-## 7. Locations — core.locations
+## 7. Locations - core.locations
 
 Geographic areas and market indicators.
 
@@ -117,7 +117,7 @@ Geographic areas and market indicators.
 | latitude | DOUBLE PRECISION | Yes | Latitude coordinate. |
 | longitude | DOUBLE PRECISION | Yes | Longitude coordinate. |
 
-## 8. Properties — core.properties
+## 8. Properties - core.properties
 
 Property characteristics and advertised prices.
 
@@ -133,7 +133,7 @@ Property characteristics and advertised prices.
 | new_build | BOOLEAN | Yes | Recorded new-build indicator. |
 | first_marketed_date | DATE | Yes | Date the property was first marketed. |
 
-## 9. Web Sessions — core.web_sessions
+## 9. Web Sessions - core.web_sessions
 
 Website sessions and activity measures.
 
@@ -147,7 +147,7 @@ Website sessions and activity measures.
 | pages_viewed | INTEGER | Yes | Number of pages viewed during the session. |
 | duration_sec | NUMERIC | Yes | Session duration in seconds. |
 
-## 10. Property Views — core.property_views
+## 10. Property Views - core.property_views
 
 Website events associated with properties.
 
@@ -159,7 +159,7 @@ Website events associated with properties.
 | event_type | TEXT | Yes | Recorded event category. |
 | event_time | TIMESTAMP | Yes | Event date and time. |
 
-## 11. Site Visits — core.site_visits
+## 11. Site Visits - core.site_visits
 
 Property visits and recorded outcomes.
 
@@ -172,7 +172,7 @@ Property visits and recorded outcomes.
 | visit_date | DATE | Yes | Visit date. |
 | outcome | TEXT | Yes | Recorded visit outcome. |
 
-## 12. Transactions — core.transactions
+## 12. Transactions - core.transactions
 
 Property transactions and agreed financial terms.
 
@@ -189,7 +189,7 @@ Property transactions and agreed financial terms.
 | tenancy_months | INTEGER | Yes | Recorded tenancy duration in months. |
 | mortgage_ltv_pct | NUMERIC | Yes | Recorded mortgage loan-to-value percentage. |
 
-## 13. Payments — core.payments
+## 13. Payments - core.payments
 
 Payment amounts, dates and settlement status.
 
@@ -204,7 +204,7 @@ Payment amounts, dates and settlement status.
 | status | TEXT | Yes | Recorded payment status. |
 | days_late | INTEGER | Yes | Recorded number of days late. |
 
-## 14. Customer Mapping — core.customer_mapping
+## 14. Customer Mapping - core.customer_mapping
 
 Supporting table created during duplicate-customer cleaning.
 This is additional to the 13 original case study tables.
