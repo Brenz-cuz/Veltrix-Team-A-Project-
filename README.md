@@ -18,6 +18,18 @@ Data dictionary Markdown
 - No column defaults were reported.
 - These are initial entries covering selected fields in each table.
 
+  ----  IDENTIFIES THE DATA DICTIONARIES IN EACH TABLE AND COLUMNS 
+
+SELECT
+    table_name,
+    column_name,
+    data_type,
+    is_nullable,
+    column_default
+FROM information_schema.columns
+WHERE table_schema = 'core'
+ORDER BY table_name, ordinal_position;
+
 ## 1. Customers - core.customers
 
 Customer profiles, property requirements and stated budgets.
