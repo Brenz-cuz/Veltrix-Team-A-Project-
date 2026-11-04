@@ -225,3 +225,153 @@ This is additional to the 13 original case study tables.
 |---|---|---|---|
 | duplicate_customer_id | TEXT | No | Customer identifier whose related records are to be re-pointed. |
 | surviving_customer_id | TEXT | No | Customer identifier retained as the destination for related records. |
+
+
+
+# Veltrix Feature Documentation and Leakage Review
+
+## Purpose and grain
+
+The feature views summarise customer behaviour, requirements and engagement.
+Each view contains at most one row per customer_id.
+
+Outcome fields are stored separately in core.customer_outcomes.
+
+Customers without activity may be absent from individual activity views.
+When building the final customer table, start from core.customers and
+LEFT JOIN each aggregated view by customer_id.
+
+## 1. Website Session Features
+
+Source: core.v_customer_sessions
+Underlying table: core.web_sessions
+
+| Feature | Definition | Unit | Missing-value handling |
+|---|---|---|---|
+| total_sessions | Number of identified website sessions. | Sessions | Use 0 where a customer has no recorded sessions. |
+| total_pages_viewed | Sum of pages_viewed across sessions. | Pages | Use 0 for no sessions; retain NULL if activity exists but values are entirely missing. |
+| total_duration_sec | Sum of recorded session durations. | Seconds | Use 0 for no sessions; retain NULL if durations are entirely missing. |
+| avg_session_duration_sec | Average recorded session duration. | Seconds | Retain NULL when no duration observations exist. |
+| first_session_at | Earliest recorded session start. | Timestamp | Retain NULL when no sessions exist. |
+| last_session_at | Latest recorded session start. | Timestamp | Retain NULL when no sessions exist. |
+
+Unidentified sessions are excluded from customer-level attribution.
+
+## 2. Property-View Features
+
+Source: core.v_customer_property_view_summary
+Underlying tables: core.property_views and core.web_sessions
+
+Only events with event_type = 'View' are included.
+
+| Feature | Definition | Unit | Missing-value handling |
+|---|---|---|---|
+| total_property_views | Number of property-view events, including repeat views. | Events | Use 0 for customers with no recorded views. |
+| distinct_properties_viewed | Number of different properties viewed. | Properties | Use 0 for customers with no recorded views. |
+| sessions_with_property_views | Number of sessions containing property-view events. | Sessions | Use 0 for customers with no recorded views. |
+| first_property_view_at | Earliest recorded property-view event. | Timestamp | Retain NULL when no views exist. |
+| last_property_view_at | Latest recorded property-view event. | Timestamp | Retain NULL when no views exist. |
+
+Save, Share, Virtual tour and Floorplan download events are excluded.
+
+## 3. Viewed-Price Features for Budget Imputation
+
+Source: core.v_customer_viewed_budget_medians
+Underlying tables: core.property_views, core.web_sessions and core.properties
+
+Only View events and positive, non-null advertised prices contribute.
+
+| Feature | Definition | Unit | Missing-value handling |
+|---|---|---|---|
+| median_asking_price_gbp | Median advertised purchase price across property-view events. | GBP | Retain NULL when no qualifying purchase prices exist. |
+| median_rent_pcm_gbp | Median advertised monthly rent across property-view events. | GBP per month | Retain NULL when no qualifying rents exist. |
+| purchase_price_view_count | Number of view events contributing to the purchase-price median. | Events | Use 0 when no qualifying events exist. |
+| rent_price_view_count | Number of view events contributing to the rental median. | Events | Use 0 when no qualifying events exist. |
+
+Repeated views give a property repeated weight in the median.
+These are behavioural budget estimates, not confirmed affordability.
+
+No customer budgets have been imputed by this view alone.
+If used for imputation, preserve stated budgets and record the estimate's
+source and supporting observation count.
+
+## 4. Enquiry and Viewing Features
+
+Source: core.v_customer_enquiry_features
+Underlying tables: core.leads, core.interactions and core.site_visits
+
+| Feature | Definition | Unit | Missing-value handling |
+|---|---|---|---|
+| total_enquiries | Number of associated lead records. | Leads | 0 when no leads exist. |
+| avg_response_time_min | Average non-negative recorded interaction response time. | Minutes | Retain NULL when no qualifying observations exist. |
+| response_time_observations | Number of interactions contributing to the response-time average. | Interactions | 0 when no qualifying observations exist. |
+| total_recorded_visits | Number of associated site-visit records. | Visits | 0 when no visits are recorded. |
+
+Visits include In person, Virtual, Open house and Proxy types.
+The observed outcomes are consistent with visits having taken place.
+A second-viewing request does not itself count as a second completed visit.
+
+Response time reflects recorded interaction handling and may be influenced
+by agent workload, channel and service processes. It is not established
+as a measure of customer response speed.
+
+## 5. Outcome Fields — Evaluation Only
+
+Source: core.customer_outcomes
+
+| Field | Definition | Handling |
+|---|---|---|
+| converted | TRUE if any associated lead is marked converted. | NULL when no non-null lead conversion information exists. |
+| avg_days_to_decision | Mean days from lead creation to closure, using valid date pairs. | NULL when no qualifying pairs exist. Closure is a proxy for decision. |
+| decision_observations | Number of lead date pairs contributing to the average. | 0 when none qualify. |
+| on_time_payments | Number of qualifying payments paid by their due date. | Includes only positive amounts with known paid and due dates. |
+| payments_with_known_timing | Number of positive payments with known paid and due dates. | Denominator for the payment rate. |
+| on_time_payment_rate | On-time payments divided by payments with known timing. | Proportion from 0 to 1; NULL when the denominator is 0. |
+
+Unpaid payments are excluded from this rate.
+The four unresolved negative payment amounts are also excluded.
+
+All fields in this outcome table, including supporting counts, are excluded
+from clustering inputs.
+
+## 6. Leakage Review
+
+| Field or feature group | Risk | Required treatment |
+|---|---|---|
+| customer_id | Identifier may introduce arbitrary distances or categories. | Use only for joins and traceability; exclude from model inputs. |
+| converted and decision-time fields | Direct outcome information. | Keep in the outcome table for evaluation. |
+| Payment rate and payment counts | Information arising from transactions and settlement. | Exclude from clustering inputs. |
+| Total sessions, views, enquiries and visits | Current views include all available activity, potentially after conversion or the intended scoring date. | Restrict source records to the agreed observation cutoff before modelling. |
+| Response-time features | Later interactions may occur after the intended scoring point. | Restrict to interactions whose response information was available by the cutoff. |
+| First/last activity timestamps | May reveal later activity and differences in customer tenure. | Apply the cutoff; derive recency or tenure where useful instead of using raw timestamps. |
+| Viewed-price medians | Later views can reveal preferences that were unknown earlier. | Use only eligible views available by the cutoff. |
+| Advertised property prices | Current prices may differ from prices displayed when the customer viewed the property. | Use historical prices if available; otherwise document this limitation. |
+| Customer profile and stated budgets | Current values may have been updated after the scoring point. | Use historical snapshots where available; otherwise disclose the limitation. |
+| Budget imputation and preprocessing | Fitting on validation/test records can contaminate evaluation. | Fit shared imputation, scaling and encoding rules on training data only when using a train/test split. |
+
+## 7. Timing Rules
+
+For descriptive segmentation:
+- Choose a fixed snapshot date.
+- Include only information available by that date.
+- Describe subsequent outcome comparisons as associations.
+
+For segmentation intended for early lead routing:
+- Define an observation period, such as the first agreed number of days
+  after lead creation.
+- Use only information available during that period.
+- Evaluate outcomes occurring after the observation period.
+- Account for customers with multiple leads so that later lead activity
+  does not enter an earlier lead's feature window.
+
+The observation period must be chosen before interpreting model results.
+
+## 8. Current Review Status
+
+- Outcome fields are stored separately from behavioural features.
+- Each activity source is aggregated before joining customer summaries,
+  reducing the risk of inflated counts.
+- Customer identifiers must be excluded from clustering inputs.
+- The existing views do not yet enforce an observation cutoff.
+- Historical availability of profile changes and property prices is unverified.
+- Timing leakage checks therefore remain outstanding.
