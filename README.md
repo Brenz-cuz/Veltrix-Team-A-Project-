@@ -428,3 +428,880 @@ Segment numbers are specific to each solution. For example, Segment 1 in K6 does
 - High browsing activity does not necessarily indicate readiness to purchase.
 - Activity totals cover the available observation period and may reflect differences in customer tenure.
 - These are descriptive customer profiles; using them for early lead routing requires features restricted to information available at the routing date.
+
+
+# Veltrix: Provisional Customer Persona Cards
+
+These 21 cards describe the alternative K6, K7 and K8 solutions. Each solution covers the same **101,598 surviving customers**; do not add their populations together. Segment IDs are specific to each solution. Each card is a compact, standalone persona suitable for a one-page layout; Markdown itself does not enforce printed page breaks.
+
+## How to read the cards
+
+- **Size:** customer count and share within that candidate solution.
+- **Value:** separate median estimated purchase and monthly rental budgets, plus recorded conversion among customers with known outcomes. Budgets indicate requirements, not revenue, wealth or profitability. Estimates combine stated budgets and imputed values.
+- **Behaviour:** mean recorded activity per customer across the available history. Recorded visits include in-person, virtual, open-house and proxy visits.
+- **Channels:** suggested channels to test, not measured preferences. These profiles do not include segment-level channel performance. Check recorded preferences and marketing consent before contact.
+- **Interpretation:** group tendencies are not individual facts. Different observation lengths can affect activity totals. Missing outcomes do not mean non-conversion. These snapshot segments are descriptive and have not been cleared for early lead routing.
+- **Scope:** no age-based persona labels are assigned because the reviewed profiles do not establish dominant age groups. Conversion is an evaluation outcome, not a clustering input. No segment-level collected-receipts figures are available in the profile source, so none are invented here.
+
+Source: `segment_profiles.csv` and methodology in `Veltrix_Candidate_Segments_Complete.zip`. Payment outcomes are omitted from these cards because the previously reported SQL results are more current and small payment samples require separate interpretation. All recommended approaches are proposals to test.
+
+---
+
+## K6 · Segment 1: Low-digital, direct enquirers
+
+**Size:** 7,387 customers · 7.3% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 72.0% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.3%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £315,000 |
+| Median estimated monthly rent budget — Rent customers | £1,500.00 pcm |
+| Recorded conversion rate — known outcomes only | 24.9% |
+| Customers with known conversion outcomes | 5,546 / 7,387 (75.1%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 0.3 |
+| Property View events | 1.7 |
+| Enquiries | 1.05 |
+| Recorded viewings / visits | 2.59 |
+
+### Channels to test
+
+Offer telephone follow-up or an appointment after an enquiry; provide a concise email summary if requested. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Make direct enquiry handling straightforward and avoid requiring customers to complete an extensive online journey. Confirm intent, budget and preferred contact method before arranging a suitable viewing.
+
+**Measure success:** Enquiry-to-viewing progression and successful contact rate. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Low digital activity describes the recorded data; it does not prove a preference for telephone or branch contact.
+
+---
+
+## K6 · Segment 2: Light-browsing, active enquirers
+
+**Size:** 9,852 customers · 9.7% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 72.0% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 6.9%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £345,000 |
+| Median estimated monthly rent budget — Rent customers | £1,750.00 pcm |
+| Recorded conversion rate — known outcomes only | 27.0% |
+| Customers with known conversion outcomes | 8,061 / 9,852 (81.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 2.8 |
+| Property View events | 7.2 |
+| Enquiries | 1.17 |
+| Recorded viewings / visits | 2.94 |
+
+### Channels to test
+
+Offer telephone or email viewing coordination, according to the customer’s stated preference. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Prioritise relevant shortlists and convenient viewing arrangements. Use their enquiry details to personalise follow-up rather than waiting for more website activity.
+
+**Measure success:** Viewing attendance and subsequent enquiry or offer progression. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K6 · Segment 3: Browsers with limited direct engagement
+
+**Size:** 21,784 customers · 21.4% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 74.0% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.2%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £370,000 |
+| Median estimated monthly rent budget — Rent customers | £1,550.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.1% |
+| Customers with known conversion outcomes | 2,008 / 21,784 (9.2%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 7.2 |
+| Property View events | 36.3 |
+| Enquiries | 0.09 |
+| Recorded viewings / visits | 0.01 |
+
+### Channels to test
+
+Test consented email shortlists and website enquiry prompts; provide an optional adviser callback. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers narrow their search using relevant shortlists and clearer property information. Test a low-pressure invitation to speak to an adviser.
+
+**Measure success:** Browsing-to-enquiry progression and viewing bookings. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K6 · Segment 4: Higher-budget, engaged buyers
+
+**Size:** 17,462 customers · 17.2% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 81.5% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 20.0%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £485,000 |
+| Median estimated monthly rent budget — Rent customers | £2,150.00 pcm |
+| Recorded conversion rate — known outcomes only | 23.8% |
+| Customers with known conversion outcomes | 17,462 / 17,462 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 12.2 |
+| Property View events | 66.0 |
+| Enquiries | 1.48 |
+| Recorded viewings / visits | 3.79 |
+
+### Channels to test
+
+Offer an adviser-led telephone or video appointment and an emailed shortlist, based on preference; use virtual viewing options where helpful. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Provide a tailored shortlist within the customer’s confirmed budget. Ask whether remote coordination is useful; offer it where requested rather than assuming every customer is overseas.
+
+**Measure success:** Relevant viewing bookings, enquiry progression and customer feedback. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Overseas customers are a minority; offer remote support based on individual needs.
+
+---
+
+## K6 · Segment 5: Lower-budget, highly engaged buyers
+
+**Size:** 24,420 customers · 24.0% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 83.2% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 3.9%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £210,000 |
+| Median estimated monthly rent budget — Rent customers | £1,150.00 pcm |
+| Recorded conversion rate — known outcomes only | 29.6% |
+| Customers with known conversion outcomes | 24,420 / 24,420 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 13.8 |
+| Property View events | 82.1 |
+| Enquiries | 1.86 |
+| Recorded viewings / visits | 4.84 |
+
+### Channels to test
+
+Offer concise email shortlists and telephone viewing coordination, following the customer’s preference. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Focus on properties within confirmed affordability and coordinate viewings efficiently. Clarify financing needs without inferring financial circumstances from the cluster label.
+
+**Measure success:** Viewing progression and shortlist relevance. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K6 · Segment 6: Intensive property browsers
+
+**Size:** 20,693 customers · 20.4% of K6.
+
+### Customer characteristics
+
+- **Purchase intent:** 84.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 8.5%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £310,000 |
+| Median estimated monthly rent budget — Rent customers | £1,350.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.9% |
+| Customers with known conversion outcomes | 3,293 / 20,693 (15.9%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 37.0 |
+| Property View events | 310.2 |
+| Enquiries | 0.16 |
+| Recorded viewings / visits | 0.06 |
+
+### Channels to test
+
+Test website comparison prompts and consented email shortlists; offer a callback rather than unsolicited intensive contact. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers reduce a broad search to a manageable shortlist. Test comparison tools and an optional adviser conversation; do not equate frequent browsing with readiness to transact.
+
+**Measure success:** Browsing-to-enquiry progression and uptake of adviser support. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K7 · Segment 1: Occasional property explorers
+
+**Size:** 8,586 customers · 8.5% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 71.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 8.6%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £400,000 |
+| Median estimated monthly rent budget — Rent customers | £1,900.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.0% |
+| Customers with known conversion outcomes | 847 / 8,586 (9.9%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 3.8 |
+| Property View events | 12.5 |
+| Enquiries | 0.10 |
+| Recorded viewings / visits | 0.00 |
+
+### Channels to test
+
+Test consented email property alerts and helpful website prompts; offer direct contact when requested. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Offer a simple route from browsing to an enquiry. Test concise property recommendations and a clear invitation to book a viewing without assuming purchase readiness.
+
+**Measure success:** New enquiries per contacted customer and alert engagement. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K7 · Segment 2: Light-browsing, viewing-active customers
+
+**Size:** 9,850 customers · 9.7% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 71.8% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 6.5%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £330,000 |
+| Median estimated monthly rent budget — Rent customers | £1,700.00 pcm |
+| Recorded conversion rate — known outcomes only | 30.5% |
+| Customers with known conversion outcomes | 9,850 / 9,850 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 3.3 |
+| Property View events | 10.2 |
+| Enquiries | 1.55 |
+| Recorded viewings / visits | 4.16 |
+
+### Channels to test
+
+Offer telephone or email viewing coordination, according to the customer’s stated preference. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Prioritise relevant shortlists and convenient viewing arrangements. Use their enquiry details to personalise follow-up rather than waiting for more website activity.
+
+**Measure success:** Viewing attendance and subsequent enquiry or offer progression. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K7 · Segment 3: Low-digital, direct enquirers
+
+**Size:** 7,213 customers · 7.1% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 72.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.4%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £315,000 |
+| Median estimated monthly rent budget — Rent customers | £1,500.00 pcm |
+| Recorded conversion rate — known outcomes only | 24.3% |
+| Customers with known conversion outcomes | 5,354 / 7,213 (74.2%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 0.3 |
+| Property View events | 1.7 |
+| Enquiries | 1.03 |
+| Recorded viewings / visits | 2.51 |
+
+### Channels to test
+
+Offer telephone follow-up or an appointment after an enquiry; provide a concise email summary if requested. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Make direct enquiry handling straightforward and avoid requiring customers to complete an extensive online journey. Confirm intent, budget and preferred contact method before arranging a suitable viewing.
+
+**Measure success:** Enquiry-to-viewing progression and successful contact rate. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Low digital activity describes the recorded data; it does not prove a preference for telephone or branch contact.
+
+---
+
+## K7 · Segment 4: Regular browsers with limited enquiries
+
+**Size:** 20,347 customers · 20.0% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 76.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 8.6%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £317,500 |
+| Median estimated monthly rent budget — Rent customers | £1,375.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.0% |
+| Customers with known conversion outcomes | 2,188 / 20,347 (10.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 10.2 |
+| Property View events | 58.3 |
+| Enquiries | 0.11 |
+| Recorded viewings / visits | 0.00 |
+
+### Channels to test
+
+Test consented email shortlists and website enquiry prompts; provide an optional adviser callback. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers narrow their search using relevant shortlists and clearer property information. Test a low-pressure invitation to speak to an adviser.
+
+**Measure success:** Browsing-to-enquiry progression and viewing bookings. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K7 · Segment 5: Higher-budget, engaged buyers
+
+**Size:** 16,617 customers · 16.4% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 82.4% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 20.6%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £490,000 |
+| Median estimated monthly rent budget — Rent customers | £2,168.75 pcm |
+| Recorded conversion rate — known outcomes only | 22.2% |
+| Customers with known conversion outcomes | 16,617 / 16,617 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 12.7 |
+| Property View events | 69.3 |
+| Enquiries | 1.44 |
+| Recorded viewings / visits | 3.60 |
+
+### Channels to test
+
+Offer an adviser-led telephone or video appointment and an emailed shortlist, based on preference; use virtual viewing options where helpful. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Provide a tailored shortlist within the customer’s confirmed budget. Ask whether remote coordination is useful; offer it where requested rather than assuming every customer is overseas.
+
+**Measure success:** Relevant viewing bookings, enquiry progression and customer feedback. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Overseas customers are a minority; offer remote support based on individual needs.
+
+---
+
+## K7 · Segment 6: Lower-budget, highly engaged buyers
+
+**Size:** 23,476 customers · 23.1% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 83.6% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 3.9%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £210,000 |
+| Median estimated monthly rent budget — Rent customers | £1,150.00 pcm |
+| Recorded conversion rate — known outcomes only | 29.6% |
+| Customers with known conversion outcomes | 23,476 / 23,476 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 14.3 |
+| Property View events | 85.4 |
+| Enquiries | 1.86 |
+| Recorded viewings / visits | 4.84 |
+
+### Channels to test
+
+Offer concise email shortlists and telephone viewing coordination, following the customer’s preference. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Focus on properties within confirmed affordability and coordinate viewings efficiently. Clarify financing needs without inferring financial circumstances from the cluster label.
+
+**Measure success:** Viewing progression and shortlist relevance. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K7 · Segment 7: Intensive property browsers
+
+**Size:** 15,509 customers · 15.3% of K7.
+
+### Customer characteristics
+
+- **Purchase intent:** 85.8% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.0%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £335,000 |
+| Median estimated monthly rent budget — Rent customers | £1,400.00 pcm |
+| Recorded conversion rate — known outcomes only | 1.0% |
+| Customers with known conversion outcomes | 2,458 / 15,509 (15.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 43.9 |
+| Property View events | 379.6 |
+| Enquiries | 0.16 |
+| Recorded viewings / visits | 0.06 |
+
+### Channels to test
+
+Test website comparison prompts and consented email shortlists; offer a callback rather than unsolicited intensive contact. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers reduce a broad search to a manageable shortlist. Test comparison tools and an optional adviser conversation; do not equate frequent browsing with readiness to transact.
+
+**Measure success:** Browsing-to-enquiry progression and uptake of adviser support. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 1: Occasional property explorers
+
+**Size:** 7,324 customers · 7.2% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 70.6% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 7.8%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £380,000 |
+| Median estimated monthly rent budget — Rent customers | £1,800.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.0% |
+| Customers with known conversion outcomes | 792 / 7,324 (10.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 3.5 |
+| Property View events | 10.6 |
+| Enquiries | 0.11 |
+| Recorded viewings / visits | 0.00 |
+
+### Channels to test
+
+Test consented email property alerts and helpful website prompts; offer direct contact when requested. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Offer a simple route from browsing to an enquiry. Test concise property recommendations and a clear invitation to book a viewing without assuming purchase readiness.
+
+**Measure success:** New enquiries per contacted customer and alert engagement. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 2: Light-browsing, viewing-active customers
+
+**Size:** 9,402 customers · 9.3% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 71.8% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 6.7%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £340,000 |
+| Median estimated monthly rent budget — Rent customers | £1,725.00 pcm |
+| Recorded conversion rate — known outcomes only | 30.6% |
+| Customers with known conversion outcomes | 9,402 / 9,402 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 3.3 |
+| Property View events | 9.9 |
+| Enquiries | 1.52 |
+| Recorded viewings / visits | 4.11 |
+
+### Channels to test
+
+Offer telephone or email viewing coordination, according to the customer’s stated preference. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Prioritise relevant shortlists and convenient viewing arrangements. Use their enquiry details to personalise follow-up rather than waiting for more website activity.
+
+**Measure success:** Viewing attendance and subsequent enquiry or offer progression. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 3: Low-digital, direct enquirers
+
+**Size:** 7,152 customers · 7.0% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 72.0% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.4%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £315,000 |
+| Median estimated monthly rent budget — Rent customers | £1,500.00 pcm |
+| Recorded conversion rate — known outcomes only | 24.2% |
+| Customers with known conversion outcomes | 5,318 / 7,152 (74.4%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 0.3 |
+| Property View events | 1.6 |
+| Enquiries | 1.02 |
+| Recorded viewings / visits | 2.51 |
+
+### Channels to test
+
+Offer telephone follow-up or an appointment after an enquiry; provide a concise email summary if requested. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Make direct enquiry handling straightforward and avoid requiring customers to complete an extensive online journey. Confirm intent, budget and preferred contact method before arranging a suitable viewing.
+
+**Measure success:** Enquiry-to-viewing progression and successful contact rate. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Low digital activity describes the recorded data; it does not prove a preference for telephone or branch contact.
+
+---
+
+## K8 · Segment 4: Regular browsers without viewings
+
+**Size:** 19,785 customers · 19.5% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 76.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 9.8%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £355,000 |
+| Median estimated monthly rent budget — Rent customers | £1,450.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.0% |
+| Customers with known conversion outcomes | 1,169 / 19,785 (5.9%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 9.5 |
+| Property View events | 53.0 |
+| Enquiries | 0.06 |
+| Recorded viewings / visits | 0.00 |
+
+### Channels to test
+
+Test consented email shortlists and website enquiry prompts; provide an optional adviser callback. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers narrow their search using relevant shortlists and clearer property information. Test a low-pressure invitation to speak to an adviser.
+
+**Measure success:** Browsing-to-enquiry progression and viewing bookings. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 5: Lower-budget, browsing-led buyers
+
+**Size:** 15,934 customers · 15.7% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 80.3% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 4.0%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £220,000 |
+| Median estimated monthly rent budget — Rent customers | £1,200.00 pcm |
+| Recorded conversion rate — known outcomes only | 13.0% |
+| Customers with known conversion outcomes | 15,907 / 15,934 (99.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 15.6 |
+| Property View events | 90.2 |
+| Enquiries | 1.14 |
+| Recorded viewings / visits | 2.28 |
+
+### Channels to test
+
+Test consented email recommendations and website viewing prompts, with optional telephone support. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Offer affordable, relevant shortlists and invite customers to clarify their requirements. Encourage a suitable viewing without treating online engagement alone as a commitment.
+
+**Measure success:** Viewing bookings and enquiry progression among engaged browsers. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 6: Higher-budget, internationally mixed buyers
+
+**Size:** 14,479 customers · 14.3% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 82.8% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 22.4%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £520,000 |
+| Median estimated monthly rent budget — Rent customers | £2,300.00 pcm |
+| Recorded conversion rate — known outcomes only | 22.8% |
+| Customers with known conversion outcomes | 14,479 / 14,479 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 12.6 |
+| Property View events | 68.9 |
+| Enquiries | 1.43 |
+| Recorded viewings / visits | 3.61 |
+
+### Channels to test
+
+Offer an adviser-led telephone or video appointment and an emailed shortlist, based on preference; use virtual viewing options where helpful. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Provide a tailored shortlist within the customer’s confirmed budget. Ask whether remote coordination is useful; offer it where requested rather than assuming every customer is overseas.
+
+**Measure success:** Relevant viewing bookings, enquiry progression and customer feedback. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Overseas customers are a minority; offer remote support based on individual needs.
+
+---
+
+## K8 · Segment 7: Intensive property browsers
+
+**Size:** 15,649 customers · 15.4% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 85.1% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 8.4%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £330,000 |
+| Median estimated monthly rent budget — Rent customers | £1,350.00 pcm |
+| Recorded conversion rate — known outcomes only | 0.8% |
+| Customers with known conversion outcomes | 1,850 / 15,649 (11.8%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 43.1 |
+| Property View events | 373.6 |
+| Enquiries | 0.12 |
+| Recorded viewings / visits | 0.03 |
+
+### Channels to test
+
+Test website comparison prompts and consented email shortlists; offer a callback rather than unsolicited intensive contact. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Help customers reduce a broad search to a manageable shortlist. Test comparison tools and an optional adviser conversation; do not equate frequent browsing with readiness to transact.
+
+**Measure success:** Browsing-to-enquiry progression and uptake of adviser support. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Known conversion outcomes cover only a minority of this segment; the observed rate should not be generalised to all members. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
+
+---
+
+## K8 · Segment 8: Lower-budget, viewing-intensive buyers
+
+**Size:** 11,873 customers · 11.7% of K8.
+
+### Customer characteristics
+
+- **Purchase intent:** 86.4% Buy; remaining customers have Rent intent in this candidate dataset.
+- **Overseas share:** 4.8%; this does not establish preferred contact channel.
+
+### Value and observed outcomes
+
+| Measure | Profile |
+|---|---:|
+| Median estimated purchase budget — Buy customers | £210,000 |
+| Median estimated monthly rent budget — Rent customers | £1,250.00 pcm |
+| Recorded conversion rate — known outcomes only | 45.6% |
+| Customers with known conversion outcomes | 11,873 / 11,873 (100.0%) |
+
+### Recorded behaviour
+
+| Average per customer | Value |
+|---|---:|
+| Website sessions | 12.8 |
+| Property View events | 78.9 |
+| Enquiries | 2.65 |
+| Recorded viewings / visits | 7.41 |
+
+### Channels to test
+
+Offer a named adviser by the customer’s preferred channel, with email viewing summaries and optional telephone follow-up. Channel preference has not been verified for this segment.
+
+### Recommended approach
+
+Coordinate viewings and follow-up carefully, summarise feedback and refine the shortlist. Confirm next steps and affordability without applying pressure or assuming readiness.
+
+**Measure success:** Viewing-to-offer or application progression and follow-up completion. Evaluate any proposed contact strategy through a pilot rather than assuming an effect.
+
+**Interpretation:** Conversion describes customers with recorded outcomes and does not establish future performance. Behaviour totals can reflect time observed and activity after conversion; they do not establish current intent.
