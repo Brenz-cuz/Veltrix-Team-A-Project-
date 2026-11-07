@@ -375,3 +375,56 @@ The observation period must be chosen before interpreting model results.
 - The existing views do not yet enforce an observation cutoff.
 - Historical availability of profile changes and property prices is unverified.
 - Timing leakage checks therefore remain outstanding.
+
+  
+
+# Veltrix: Provisional Customer Segment Names
+
+The following names describe the observed characteristics and behaviour of customers in the three candidate clustering solutions: K6, K7 and K8.
+
+Segment numbers are specific to each solution. For example, Segment 1 in K6 does not necessarily represent the same customer group as Segment 1 in K7.
+
+## K6: Six-Segment Solution
+
+| Segment | Provisional name | One-line description |
+|---|---|---|
+| Segment 1 | Low-digital, direct enquirers | Very little recorded browsing, but around one enquiry and three viewings per customer. |
+| Segment 2 | Light-browsing, active enquirers | Occasional online browsing alongside regular enquiries and viewings. |
+| Segment 3 | Browsers with limited direct engagement | Mainly buyers exploring properties online with very few enquiries or viewings. |
+| Segment 4 | Higher-budget, engaged buyers | Mainly buyers with higher estimated budgets, regular viewings and a comparatively high overseas share. |
+| Segment 5 | Lower-budget, highly engaged buyers | Predominantly UK-based buyers with lower estimated budgets and strong enquiry and viewing activity. |
+| Segment 6 | Intensive property browsers | Extensive online browsing with very little recorded enquiry or viewing activity. |
+
+## K7: Seven-Segment Solution
+
+| Segment | Provisional name | One-line description |
+|---|---|---|
+| Segment 1 | Occasional property explorers | Light online browsing, few enquiries and almost no recorded viewings. |
+| Segment 2 | Light-browsing, viewing-active customers | Limited online browsing but comparatively strong direct engagement through enquiries and viewings. |
+| Segment 3 | Low-digital, direct enquirers | Minimal recorded online activity, but around one enquiry and three viewings per customer. |
+| Segment 4 | Regular browsers with limited enquiries | Regular online property exploration with few enquiries and almost no recorded viewings. |
+| Segment 5 | Higher-budget, engaged buyers | Mainly buyers with higher estimated budgets, regular viewings and around 21% overseas customers. |
+| Segment 6 | Lower-budget, highly engaged buyers | Predominantly UK-based buyers with lower estimated budgets and strong enquiry and viewing activity. |
+| Segment 7 | Intensive property browsers | Very high session and property-view activity with little recorded direct engagement. |
+
+## K8: Eight-Segment Solution
+
+| Segment | Provisional name | One-line description |
+|---|---|---|
+| Segment 1 | Occasional property explorers | Light online browsing, very few enquiries and no recorded viewings. |
+| Segment 2 | Light-browsing, viewing-active customers | Limited online browsing alongside comparatively strong enquiry and viewing activity. |
+| Segment 3 | Low-digital, direct enquirers | Minimal recorded browsing, but around one enquiry and three viewings per customer. |
+| Segment 4 | Regular browsers without viewings | Regular property browsing with very few enquiries and no recorded viewings. |
+| Segment 5 | Lower-budget, browsing-led buyers | Predominantly UK-based buyers with lower estimated budgets and more browsing than direct engagement. |
+| Segment 6 | Higher-budget, internationally mixed buyers | Mainly buyers with higher estimated budgets, regular viewings and around 22% overseas customers. |
+| Segment 7 | Intensive property browsers | Extensive online property exploration with very few enquiries or recorded viewings. |
+| Segment 8 | Lower-budget, viewing-intensive buyers | Mainly buyers with lower estimated budgets and the strongest enquiry and viewing activity in K8. |
+
+## Interpretation Notes
+
+- Names are provisional and describe group tendencies rather than every individual.
+- Higher and lower budgets are relative to this dataset; budget estimates include imputed values.
+- Low recorded online activity does not establish a preferred contact channel.
+- High browsing activity does not necessarily indicate readiness to purchase.
+- Activity totals cover the available observation period and may reflect differences in customer tenure.
+- These are descriptive customer profiles; using them for early lead routing requires features restricted to information available at the routing date.
